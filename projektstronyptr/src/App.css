@@ -1,310 +1,207 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Stylizacja podstawowa */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+}
+
+nav{
+  background-color: grey;
+  padding: 2%;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
   color: #333;
 }
 
-a {
+nav a:hover {
+  margin: 0 15px;
   text-decoration: none;
+  color: #6d0b0b;
+}
+
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn:hover{
+  background-color: white;
   color: #007bff;
+  border: 1px solid #007bff;
 }
 
-button {
-  cursor: pointer;
+
+
+
+/* hero*/
+.hero-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f8f9fa;
 }
 
-.blue{
-  color: #007bff;
+.doctor-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
 }
 
-/* HEADER */
-.naglowek {
-  background-color: #e3f2fd;
+
+
+
+/* acibit*/
+.activity-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.activity-cards-handler{
+  display: flex;
+  gap: 76px;
+}
+
+.activity-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.naglowek-container {
+.icon{
+  width: 100%;
+}
+
+
+
+
+/* mdeicine */
+.medicine-section{
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+
+.medicine-img{
+  width: 40%;
+  height: 40%;
+}
+
+
+
+
+/* specialzacja doktroow*/
+.specialization-section {
+  padding: 50px;
+  background-color: #f8f9fa;
+}
+
+.doctor-cards-handler{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 76px;
 }
 
-.naglowek-container nav ul {
-  list-style: none;
+
+.doctor-cards {
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
+  width: 30%;
 }
 
-.naglowek-container nav ul li {
-  margin-right: 20px;
+
+
+
+/* pricing*/
+.pricing-section {
+  padding: 50px;
 }
 
-.logo {
-  font-weight: bold;
+.pricing-cards-handler{
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.price {
   font-size: 24px;
-}
-
-.login-btn, .join-btn {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  
-}
-
-.login-btn:hover, .join-btn:hover {
-  padding: 10px 20px;
-  border: none;
-  background-color: white;
-  color: #007bff;
-  border: 2px solid #007bff
+  font-weight: bold;
 }
 
 
-.join-btn {
-  background-color: #ff4081;
+
+
+/* testimotianals*/
+.testimonials-section {
+  padding: 50px;
 }
 
-/* MAIb*/
-.main-content {
+.testimonial-cards {
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: #ffffff;
+  justify-content: space-around;
 }
 
-.text-content h1 {
-  font-size: 36px;
-}
-
-.text-content p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.get-btn, .learn-btn {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-}
-
-.get-btn:hover, .learn-btn:hover {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  background-color: white;
-  color: #007bff;
-  border: 2px solid #007bff
+.testimonial-img {
+  width: 80%;
 }
 
 
-.image-placeholder {
-  width: 300px;
-  height: 300px;
-  background-color: #e0e0e0;
-  text-align: center;
-  line-height: 300px;
-}
 
-.image-placeholder img{
-  object-fit: cover;
-  
-}
 
-/*
-.icon-placeholder {
-  width: 100px;
-  height: 100px;
-  background-color: #e0e0e0;
-  text-align: center;
-  line-height: 300px;
-}
-*/
 
-/* SEKCJA ACTIVITY */
-.activity {
-  padding: 40px;
-  background-color: #f0f0f0;
-  text-align: left;
-  
-}
-
-.activity-karty {
-  display: flex;
-  gap: 20px;
-}
-
-.karty {
-  flex: 1;
-  padding: 20px;
-  background-color: white;
-  text-align: left;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.karty h3 {
-  font-size: 22px;
-}
-
-.karty p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* SEKCJA MEDYCYNA */
-.medicine {
-  padding: 40px;
-  background-color: salmon;
-}
-
-.medicine-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.medicine-text {
-  width: 60%;
-}
-
-.medicine-placeholder {
-  width: 200px;
-  height: 200px;
-  background-color: #ffccbc;
-  text-align: center;
-  line-height: 200px;
-}
-
-/* SEKCA DOCTORS */
-.doctors {
-  padding: 40px;
-}
-
-.doctors-karty {
-  display: flex;
-  gap: 20px;
-}
-
-.doctor-karty {
-  flex: 1;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
+.newsletter-section {
+  padding: 50px;
   text-align: center;
 }
 
-.doctor-karty h3 {
-  font-size: 20px;
-}
-
-.doctor-karty p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* PRICING $$$ */
-.pricing {
-  padding: 40px;
-  background-color: #f8f8f8;
-}
-
-.pricing-karty {
-  display: flex;
-  gap: 20px;
-}
-
-.price-karty {
-  flex: 1;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.price-karty h3 {
-  font-size: 22px;
-}
-
-.price-karty p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* TESTIMONIALS */
-.testimonials {
-  padding: 40px;
-  background-color: #e3f2fd;
-}
-
-.testimonials-karty {
-  display: flex;
-  gap: 20px;
-}
-
-.testimonial-karty {
-  flex: 1;
-  padding: 20px;
-  background-color: white;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.testimonial-karty p {
-  margin-top: 10px;
-}
-
-/* FOOTER */
-footer {
-  background-color: #e0e0e0;
-  padding: 40px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-}
-
-.footer-main {
-  display: flex;
-  gap: 10px;
-}
-
-input[type="email"] {
+.newsletter-form input {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
 }
 
-.subskrypcja {
-  background-color: #007bff;
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #343a40;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
 }
 
-.footer-linki {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-contact {
-  font-size: 16px;
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
 }
